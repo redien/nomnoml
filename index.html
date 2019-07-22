@@ -498,6 +498,7 @@
 
 	<script src="lib/underscore.min.js"></script>
 	<script src="lib/filesaver.min.js"></script>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.492.0.min.js"></script>
 	<script src="codemirror/codemirror-compressed.js"></script>
 	<script src="codemirror/nomnoml.codemirror-mode.js"></script>
 	<script src="dist/nomnoml.web.js"></script>
@@ -506,7 +507,7 @@
 	<script src="dist/webapp.js"></script>
 	
 	<script>
-		var app = new App(nomnoml, CodeMirror, saveAs, _)
+		var app = new App(nomnoml, CodeMirror, AWS, saveAs, _)
 		ExportMenu('[export-menu]', app)
 		FileMenu('[file-menu]', app)
 		StorageTools('.storage-tools', app)
